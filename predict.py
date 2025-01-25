@@ -17,7 +17,7 @@ def preprocess_input(img):
     x = x * (1./255)
     return x
 
-interpreter = tflite.Interpreter(model_path='tflite_model.tflite')
+interpreter = tflite.Interpreter(model_path='saved_models/tflite_model.tflite')
 interpreter.allocate_tensors()
 
 input_index = interpreter.get_input_details()[0]['index']

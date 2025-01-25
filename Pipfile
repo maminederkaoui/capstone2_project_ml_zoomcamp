@@ -6,7 +6,8 @@ name = "pypi"
 [packages]
 waitress = "*"
 flask = "*"
-tflite-runtime = "*"
+PIL = "*"
+numpy = "*"
 
 
 [dev-packages]
