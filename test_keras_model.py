@@ -26,7 +26,7 @@ test_ds = test_gen.flow_from_directory(
 )
 
 # Loading the trained model
-model = keras.models.load_model('best_epochs_v1/model_v1_15_0.771.keras') # here, add the name of keras file
+model = keras.models.load_model('best_epochs_v1/model_v1_20_0.808.keras') # here, add the name of keras file
 
 # Evaluate the model using the best model (according to best epoch's accuracy score)
 test_loss, test_accuracy = model.evaluate(test_ds)

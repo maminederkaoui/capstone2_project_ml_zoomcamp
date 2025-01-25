@@ -18,7 +18,8 @@ The dataset is composed of two main folders : Training and Testing. Each of the 
 - brain-tumor-mri-dataset : it contains the dataset downloaded from Kaggle. 
 - notebook.ipynb : Jypyter notebook that includes Exploratory Data Analysis (EDA), training the models and fine-tuning them, testing various models at the end and saving the final model (and some specific models).
 - train.py : notebook converted to scrpit to train the final model.
-- best_epochs_v1 : folder contains the best epochs while training the final model using train.py on Saturn Cloud GPU.
+- best_epochs_v1 : folder contains the best epochs while training the final model using train.py on Saturn Cloud GPU. The best model have a size of 144 MB which is not easy to load it to my repo on Github. This keras file is not loaded to the repo ! You'll find a screenshot on the best epochs saved in the notebook.
+![alt text](<pics/best epochs train.png>)
 - convert-model.py : a script to convert the the final model from keras to tflite for inference purpose.
 - saved_models : contains the final model converted to tflite format and 3 other models (augmented_model_v1, augmented_model_v2 and base_model) that are mentionned in the notebook.
 - test_keras_model.py : testing the best epoch (=final model in keras format) on testing dataset. 
@@ -37,7 +38,7 @@ As we know, training a tensorflow model need a powerful GPU. For my case, I used
 - tensorflow==2.17.1
 - protobuf==3.20.3
 
-![alt text](<saturn cloud pip.png>)
+![alt text](<pics/saturn cloud pip.png>)
 
 ### Installing the dependecies in a virtual environment
 With the Pipfile, you can install the necessary dependencies in a virtual environnement for the project following these steps :

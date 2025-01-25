@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 
-model = keras.models.load_model('best_epochs_v1/model_v1_15_0.771.keras')
+model = keras.models.load_model('best_epochs_v1/model_v1_20_0.808.keras')
 
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 
